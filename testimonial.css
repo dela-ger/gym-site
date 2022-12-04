@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "oxanium", sans-serif;
+    color: #444;
+    font-size: 62.5%;
+  }
+  .testimonials-container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+  }
+  
+  .testimonials {
+    padding: 2.6rem;
+    padding: 0 3.2rem;
+  }
+  
+  .section-testimonials {
+    /* margin: auto; */
+    /* width: 1200px; */
+    /* padding: 4rem 0; */
+    /* background-color: #dee2e6; */
+    background-color: #e03131;
+    padding: 5rem 3.2rem;
+  }
+  
+  .sub-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: #e03131;
+  }
+  
+  .heading-secondary {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    color: #333;
+  }
+  
+  .testimonial-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4.8rem;
+  }
+  
+  .testimonial-img {
+    width: 7rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 1.6rem;
+    /* color: #555; */
+    color: white;
+  }
+  
+  .testimonial-name {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    /* color: #555; */
+    color: #25282c;
+  }
+  
+  @media (max-width: 84em) {
+    .container {
+      max-width: 120rem;
+    }
+    .heading-primary {
+      font-size: 4.4rem;
+    }
+  }
+  
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%;
+    }
+  }
+  
+  @media (max-width: 62em) {
+    html {
+      font-size: 50%;
+    }
+  
+    .testimonial-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .sub-heading {
+      font-size: 2.8rem;
+    }
+  
+    .testimonial-name {
+      font-size: 1.8rem;
+    }
+  
+    .heading-secondary {
+      font-size: 3.4rem;
+    }
+  }
+  
+  @media (max-width: 44em) {
+    .heading-primary {
+      font-size: 3.8rem;
+    }
+  
+    .sub-heading {
+      font-size: 2.6rem;
+    }
+  
+    .testimonial-name {
+      font-size: 1.6rem;
+    }
+  
+    .heading-secondary {
+      font-size: 3.2rem;
+    }
+  }
+  
+  @media (max-width: 34em) {
+    .testimonial-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .heading-primary {
+      font-size: 3.6rem;
+    }
+  
+    .sub-heading {
+      font-size: 2.4rem;
+    }
+  
+    .testimonial-name {
+      font-size: 1.4rem;
+    }
+  
+    .heading-secondary {
+      font-size: 3rem;
+    }
+  }

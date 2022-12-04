@@ -1,0 +1,605 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxanium', 'Arial', 'Helvetica', sans-serif;
+}
+
+body {
+    background: #ced4da;
+}
+
+.section-heading {  
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/** Features **/
+.our-features {
+    background: #501111;
+    color: white;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+.our-features__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-features__icon {
+    margin: auto;
+    padding: 2em 0; 
+}
+
+.our-features__icon-space {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
+    /* width: 33vw;
+    height: 350px; */
+    /* width: 80vw; */
+    /* padding: 3em 4em; */
+    padding: 3.5em 0;
+    /* margin: 1rem 0; */
+    margin: auto;
+}
+
+.our-features__icon-space > img {
+    width: 40vw;
+}
+
+.our-features__icon-image {
+    /* align-self: center; */
+    /* color: white; */
+    /* width: 50vw; */
+}
+
+.our-features__title {
+    /* background-color: grey; */
+    /* margin: 1rem 0; */
+    font-size: 4vw;
+    text-align: center;
+}
+
+.our-features__description {
+    /* background-color: grey; */
+    width: 80%;
+    /* margin: 1rem 0 2.5rem 0; */
+    margin: auto;
+    padding: 1rem 0 2.5rem 0;
+    font-size: 3vw;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.our-features__description > a {
+    text-decoration: none;
+    color: #ffa8a8;
+}
+
+/** About Us **/
+.about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us__left-col {
+    /* background: #501111; */
+    background-color: #ced4da;
+    color: #501111;
+}
+
+.about-us__paragraph {
+    width: 95%;
+    /* max-width: 90%; */
+    padding: 1.75rem;
+    text-align: center;
+}
+
+.about-us__right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e03131;
+}
+
+.about-us__profile {
+    /* max-width: 25%; */
+    padding: 5rem 0;
+    
+}
+
+.about-us__profile-image {
+    width: 60vw;
+    border: 2px solid white;
+    border-radius: 9px;
+    /* height: 33vh;     */
+}
+
+.about-us__caption {
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 0.25em;
+    color: white;
+}
+/* 
+.about-us__role {
+    font-weight: bold;
+} */
+
+
+/** Pricing Plans **/
+.pricing-plans {
+    color: #501111;
+}
+
+.pricing-plans__container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing-plans__plan {
+    width: 75%;
+    background-color: #e9ecef;
+    /* border: 1px solid black; */
+    border: 3px solid #501111;
+    border-radius: 5%;
+    padding: 3.75em;
+    margin: 3rem 0;
+    box-shadow: 20px 20px 10px grey;
+}
+
+.pricing-plans__tier {
+    font-size: 4.5vw;
+    padding-bottom: 1em;
+    color: #501111;
+}
+
+.pricing-plans__price {
+    font-size: 10vw;
+    color: #501111;
+    /* color: #e03131; */
+}
+
+.pricing-plans__charge-frequency {
+    color: #501111;
+    font-size: 4vw;
+}
+
+.pricing-plans__feature-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 2em 4em;
+}
+
+.pricing-plans__feature-item {
+    padding: 0.5em 0;
+    font-size: 3vw;
+    color: #25282c;
+}
+
+.pricing-plans__join-button {
+    width: 75%;
+    
+    background-color: #e03131;
+    /* background-color:  #501111; */
+    
+    margin: 2em 0;
+    padding: 1em 4em;
+    border-radius: 9px;
+    font-size: 3.25vw;
+    /* margin: 6em 0; */
+    
+    
+}
+
+.pricing-plans__join-link {
+    text-decoration: none;
+    color: white;
+}   
+
+/** Testimonials **/
+#test { color: white; }
+
+/** Sign-up **/
+#signup-header {
+    color: white;
+}
+
+/* BREAKPOINTS */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    body {
+        /* background-color: orange; */
+    }
+
+    /** Our Features **/
+    .our-features__features {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .our-features__icon {
+        /* display: flex;
+        flex-flow: column wrap;
+        width: 30vw; */
+        margin: auto;
+        width: 45%;
+        height: 45%;
+    }
+    
+    .our-features__icon-space {
+        /* background-color: grey; */
+        width: 100%;
+        height: 250px;
+        /* height: 25vw; */
+        padding: 8em;
+        /* margin: 1rem 0; */
+    }
+
+    .our-features__icon-space > img {
+        width: 15vw;
+    }
+    
+    .our-features__title {
+        /* background-color: grey;
+        margin: 1rem 0;*/
+        font-size: 3vw; 
+        /* width: 50%; */
+    }
+    
+    .our-features__description {
+        /* background-color: grey;
+        margin: 1rem 0 2.5rem 0;*/
+        font-size: 2.25vw; 
+        /* width: 50%; */
+    }
+
+    /** About Us */
+    .about-us {
+        margin-bottom: 3rem;
+    }
+
+    .about-us__left-col {   
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #ced4da; */
+        padding: 6rem 0;
+        color: #501111;
+        /* color: black; */
+        background-image: url(images/about-us-BG-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        /* background-size: 640px 793px; */
+        /* background-size: 50vw 100vh; */
+
+        /* BG BLEND MODE CHOICES */
+
+        background-blend-mode: screen; 
+        /* background-blend-mode: lighten; */
+        /* background-blend-mode: color-dodge;  */
+
+        /* background-blend-mode: darken; */
+        /* background-blend-mode: color-burn;  */
+        /* background-blend-mode: luminosity;  */
+        /* font-size: 3vw; */
+    }
+
+    .about-us__paragraphs {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: space-between;
+    }
+
+    .about-us__paragraph {
+        padding: 6rem;
+        font-size: 2rem;
+    }
+
+    .about-us__right-col {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 6rem 0;
+    }
+
+    .about-us__profile {
+        /* max-width: 25%; */
+        padding: 4rem 0;
+        width: 50%;
+        /* border: 2px solid yellow; */
+        display: flex;
+        flex-flow: column wrap;
+        /* align-content: center; */
+    }
+    
+    .about-us__profile-image {
+        width: 30vw;
+        /* height: 33vh;     */
+        align-self: center;
+        /* border: 2px solid red; */
+    }
+    
+    .about-us__caption {
+        /* text-align: center; */
+        font-size: 3vw;
+        /* border: 2px solid green; */
+    }
+
+    /* Pricing Plans section */
+    .pricing-plans {
+
+    }
+    
+    .pricing-plans__container {
+        
+    }
+    
+    .pricing-plans__plan {
+        width: 70%;
+        /* height: 100vh; */
+    }
+    
+    .pricing-plans__tier {
+        font-size: 2.5vw;
+        /* padding-bottom: 1em; */
+    }
+    
+    .pricing-plans__price {
+        font-size: 8vw;
+    }
+    
+    .pricing-plans__charge-frequency {
+        font-size: 2.5vw;
+    }
+    
+    .pricing-plans__feature-list {
+        padding: 3em 0;
+        font-size: 2.5vw;
+    }
+    
+    .pricing-plans__feature-item {
+        
+    }
+
+    .pricing-plans__join-button {
+        /* width: 40%; */
+        
+        /* font-size: 1.5vw; */
+        
+        
+    }
+    
+    .pricing-plans__join-link {
+        /* width: 40%; */
+        
+        /* font-size: 1.5vw; */
+        /* padding: 1.5em 5em;
+        margin: 8em 0; */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    body {
+        /* background-color: red; */
+    }
+
+    /** Features */    
+    .our-features {
+        padding-top: 0.75rem;       
+    }
+
+    .our-features__features {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .our-features__icon {
+        width: 20%;
+        margin: 0 1.5rem;
+    }
+
+    .our-features__icon-space {
+        /* background-color: grey; */
+        width: 20vw;
+        padding: 3em;
+        /* margin-bottom: 1em; */
+        /* height: 25vh; */
+        /* padding: 5em; */
+        /* margin: 0.5em 0; */
+    }
+
+    .our-features__icon-space > img {
+        width: 12vw;
+    }
+    
+    .our-features__title {
+        /* background-color: grey;
+        margin: 1rem 0;*/
+        font-size: 1.75vw; 
+        /* width: 50%; */
+    }
+    
+    .our-features__description {
+        /* background-color: grey;
+        margin: 1rem 0 2.5rem 0;*/
+        font-size: 1.25vw; 
+        line-height: 1.6;
+        /* width: 50%; */
+    }
+    
+    .our-features__description > a:hover {
+        text-decoration: none;   
+        color: #e03131;
+    }
+
+    /** About Us */
+    .about-us {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .about-us__paragraphs {
+        height: 80vh;
+    }
+
+    .about-us__paragraph {
+        width: 85%;
+        /* max-width: 90%; */
+        /* padding: 0; */
+        font-size: 1.25vw;
+        padding: 1rem 0;
+        text-align: left;
+        margin: auto;
+        /* border: 1px solid white; */
+    }
+
+    .about-us__left-col, .about-us__right-col {
+        width: 50%;
+    }
+
+    .about-us__left-col {   
+        height: 108.5vh;
+        display: flex;
+        flex-direction: column;
+        /* background-color: black;     */
+        /* color: white; */
+        /* color: black; */
+        background-image: url(images/about-us-BG3.jpg);
+        /* background-repeat: no-repeat; */
+        /* background-size: 100% 100%; */
+        /* background-size: 640px 793px; */
+        /* background-size: 50vw 100vh; */
+
+        /* BG BLEND MODE CHOICES */
+
+        /* background-blend-mode: screen;  */
+        /* background-blend-mode: lighten; */
+        /* background-blend-mode: color-dodge;  */
+
+        /* background-blend-mode: darken; */
+        /* background-blend-mode: color-burn;  */
+        /* background-blend-mode: luminosity;  */
+    }
+
+    .about-us__right-col {
+        height: 108.5vh;
+        padding: 2rem 0;
+    }
+
+    .about-us__profile {
+        width: 50%;
+        /* padding: 2rem; */
+        /* margin: 0; */
+        /* background-color: aqua; */
+    }
+    
+    .about-us__profile-image {
+        width: 13vw;
+        /* padding: 1rem; */
+    }
+
+    .about-us__caption {
+        font-size: 1.25vw;
+        padding: 0.1em 0;
+    }
+
+    /* Pricing Plans section */
+    #pricing {
+        padding-bottom: 2em;
+    }
+    
+    .pricing-plans {
+        margin: 0;
+        padding: 6em 0;
+    }
+    
+    .pricing-plans__container {
+        flex-direction: row;
+        /* flex-flow: row wrap; */
+    }
+    
+    .pricing-plans__plan {
+        width: 30%;
+        /* height: 90vh; */
+        padding: 1.5em 0;
+        margin: 1em;
+    }
+    
+    .pricing-plans__tier {
+        /* padding-bottom: 1em; */
+        font-size: 2.5vw;
+    }
+    
+    .pricing-plans__price {
+        font-size: 4vw;
+    }
+    
+    .pricing-plans__charge-frequency {
+        font-size: 1.25vw;
+    }
+    
+    .pricing-plans__feature-list {
+        /* padding: 0.25em 0;
+        width: 90%;
+         */
+         /* width: 70%; */
+        padding: 2em 0;
+        margin: auto;
+    }
+    
+    .pricing-plans__feature-item {
+        font-size: 1.5vw;
+        /* padding: 0; */
+        /* width: 90%; */
+    }
+
+    
+    .pricing-plans__join-button {
+        /* width: 40%; */
+        font-size: 1vw;
+        text-align: center;
+        /* margin: 8em 0; */
+        /* border: 1px solid white; */
+    }
+    
+    .pricing-plans__join-link {
+        /* width: 40%; */
+        /* font-size: 2.5vw; */
+        
+        /* margin: 8em 0; */
+        /* border: 1px solid white; */
+    }
+    
+    .pricing-plans__join-link:hover {
+        /* background-color: #e03131; */
+        background-color:  #501111;
+        color: white;
+    }
+
+    .pricing-plans__join-link:active {
+        /* background-color: #e03131; */
+        background-color: white;
+        color: #e03131;
+    }
+}

@@ -1,0 +1,389 @@
+:root{
+    --body-font: 'Oxanium', sans-serif;
+    --sign-up-font-color: #fff
+}
+
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* the background color and scroll behavior on the page */
+html,body{
+    scroll-behavior: smooth;
+    background-color: #e9ecef;
+    font-style: "Oxanium";
+}
+
+/* the log in modal styling */
+.log-in-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-color: #e9ecef;
+    position: relative;
+}
+
+.login-title{
+    position: absolute;
+    /* border: 2px solid blue; */
+
+    top: 50px;
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    color: black;
+}
+
+@media only screen and (min-width:768px){
+    .login-title{
+        font-size: 2rem;
+    }
+}
+
+.close{
+    color: #501111;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.log-in-modal{
+    display: flex;
+    position: fixed;
+    
+}
+
+.log-in-section{
+    width: 80%;
+    max-width: 450px;
+    display: flex;
+    padding: 10px 12px 10px;
+    flex-direction: column;
+    margin: 4rem 0 4.5rem;
+    outline: 0;
+    border-radius: 5px;
+    font-family: var(--body-font);
+    background-color: #fff;
+    color: #501111;
+    z-index: 1;
+}
+
+.log-in-section > h2, .log-in-section > h3 {
+    text-align: center;
+}
+
+.log-in-section > h3 > a {
+    color: #501111;
+}
+
+.log-in-section label{
+    color: #501111;
+}
+
+/* the navbar section is just to show what the sign up button does */
+.navbar{
+    border-bottom: 1px solid gray;
+}
+
+.navbar > ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 10px;
+}
+
+li{
+    list-style: none;
+}
+
+/* location and sign-up section start from here */
+.location-signup-container{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    isolation: isolate;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.location-signup-container h1{
+    color: #501111;
+    
+    font-family: var(--body-font);
+}
+
+.location-signup-container h2{
+    font-size: 2rem;
+}
+
+.location-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid hsl(0, 0%, 0%, 0.2);
+    margin-bottom: 20px;
+}
+
+.sign-up-container { 
+    background-color: #501111;
+    padding: 3rem 0;
+}
+
+/* .sign-up-container > h2 {
+    color: white;
+} */
+
+/* Break point for the locations section */
+@media only screen and (min-width:768px) {
+    .location-container{
+        display: flex;
+        flex-direction: row;
+        padding: 2em 1.5em;
+    }
+}
+
+.branch{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 20px;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    color: black;
+    background-color: hsl(0, 0%, 100%);
+   box-shadow: 0 2px 10px 0 hsla(150, 100%, 100%, 0.521);
+   margin: 2rem 0;
+}
+
+.main-branch{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px;
+    font-family: var(--body-font);
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #501111;
+    font-size: 1.6rem;
+}
+
+.main-branch > h2, .other-branch > h2 {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.main-branch > h3, .other-branch > h3 {
+    font-weight: 500;
+}
+
+.other-branch{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', monospace;
+    font-weight: 400;
+    line-height: 0.5em;
+}
+
+.map{
+    display: none;
+}
+
+/* Breakpoint for the location section */
+@media only screen and (min-width: 768px) {
+
+    .location-container{
+        gap: 10px;
+    }
+    
+    .branch{
+        display: flex;
+        width: 50%;
+        height: 50%;
+    }
+
+    .map{
+        display: flex;
+        width: 40%;
+        height: 40%;
+        
+    }
+
+    iframe{
+        width: 100%;
+        border: 5px solid limegreen;
+    }
+}
+
+/* sign-up section styling */
+.sign-up-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    isolation: isolate;
+    flex-direction: column;
+}
+
+#sign-up-header{
+    color: black;
+    margin-top: 30px;
+    font-size: 2.5rem;
+    font-family: var(--body-font);
+    font-weight: 500;
+}
+
+.sign-up-section{
+    width: 80%;
+    max-width: 450px;
+    display: flex;
+    padding: 10px 12px 10px;
+    flex-direction: column;
+    margin: 2rem 0 4.5rem;
+    outline: 0;
+    border-radius: 5px;
+    font-family: var(--body-font);
+    background-color: #ffff;
+    color: #501111;
+}
+
+/* styling of the input elements and forms */
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px;
+    line-height: 2em;
+}
+
+.input-group > input, .form-btn{
+    margin-bottom: 1em;
+    padding: 0.5rem;
+}
+
+.input-group > input{
+    background-color: hsl(0, 0%, 100%, 0.5);
+    color: #495057;
+    border-radius: 3px;
+    border:1px solid #501111;
+    font-family: var(--body-font);
+}
+
+form{
+    text-align: justify;
+}
+
+.sign-up-section label {
+    color: #501111;
+}
+
+/* form buttons */
+.form-btn{
+    background-color: #e03131;
+    border-radius: 3px;
+    border: 1px solid #e03131;
+    color: var(--sign-up-font-color);
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--body-font);
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    background-color: #501111;
+}
+
+.form-btn:focus{
+    transform: scale(1,0.95);
+}
+
+.sign-up-section > h3 > a{
+    color: #6f1a1a;
+}
+
+.sign-up-section > h2, .sign-up-section > h3{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* input focus, invalid and valid features */
+input:invalid:focus {
+    border: red solid 1px;
+    outline: none;
+  }
+
+input:valid:focus{
+    border: lime solid 1px;
+    outline: none;
+}
+
+input::placeholder{
+    color: #989ea4;
+    font-family: var(--body-font);
+}
+
+  /* Footer styling begins from here */
+footer{
+    background-color: #495057;
+    align-items: center;
+    padding: 20px;
+    font-family: var(--body-font);
+    display: block;
+    text-align: center;
+}
+
+.social, .terms, .contact, .footer-logo{
+    color: #ffff;
+    border-bottom:1px solid #e9ecef;
+
+}
+
+.social{
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+footer *{
+    padding: 0.5rem;
+}
+
+#copyright{
+    color: #ffff;
+    text-align: center;
+    align-items: center;
+}
+
+/* Break point for the footer */
+
+@media only screen and (min-width:768px) {
+    .footer-main{
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .footer-main > .contact, .footer-logo, .social, .terms{
+        border-bottom: none;
+        
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact > p:hover, .brands > i:hover, .terms > p:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

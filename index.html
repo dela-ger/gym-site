@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3 Gym - Modern Yet Minimal</title>
+
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="testimonial.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;500;600;700&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+    
+    <script src="https://kit.fontawesome.com/3eaf94b212.js" crossorigin="anonymous"></script>
+    <script src="./hero.js" defer></script>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+      <h1 class="gym-name">T3 GYM</h1>
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#features">Features</a></li>
+          <li><a class="main-nav-link" href="#about">About us</a></li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#location">Location</a></li>
+          <li><a class="main-nav-link nav-cta" href="#sign-up">Sign up</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile-only navigation features -->
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+  
+    <main>
+      <!-- Hero -->
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              "The clock is ticking. Are you becoming the person you want to
+              be?"
+            </h1>
+            <p class="hero-description">
+              You must expect great things from yourself before you can do
+              them. Action is the foundational key to all success!
+            </p>
+            <a href="#sign-up" class="btn btn--full margin-right-sm">
+              Start your fitness journey
+            </a>
+            <a href="#about" class="btn btn--outline">Learn more &darr;</a>
+          </div>
+          <div class="hero-img-box">
+            <img src="hero.jpg" class="hero-img" alt="Image of a weight room in a gym" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features section -->    
+      <section class="our-features" id="features">
+        <div>
+          <h2 class="section-heading">OUR FEATURES</h2>
+          <div class="our-features__features">
+            <div class="our-features__icon">
+              <div class="our-features__icon-space">
+                <img class="our-features_icon-image" src="icons/dumbbell-solid.svg" alt="">
+              </div>
+              <h3 class="our-features__title">TOP RANGE EQUIPMENT</h3>
+              <p class="our-features__description">We have the best exercise around to help you reach your goals.</p>
+            </div>
+            <div class="our-features__icon">
+              <div class="our-features__icon-space">
+                <img class="our-features_icon-image" src="icons/list-lined.svg" alt="">
+              </div>
+              <h3 class="our-features__title">VARIOUS FITNESS CLASSES</h3>
+              <p class="our-features__description">From weight training, to cardio and even Zumba, we have a class to suit everyone.</p>
+            </div>
+            <div class="our-features__icon">
+              <div class="our-features__icon-space">
+                <img class="our-features_icon-image" src="icons/dollar-coin.svg" alt="">
+              </div>
+              <h3 class="our-features__title">AFFORDABLE PRICING PLANS</h3>
+              <p class="our-features__description">We have three reasonably priced plans to suit most needs.</p>
+            </div>
+            <div class="our-features__icon">
+              <div class="our-features__icon-space">
+                <img class="our-features_icon-image" src="icons/user-16.svg" alt="">
+              </div>
+              <h3 class="our-features__title">TOP FITNESS TRAINERS</h3>
+              <p class="our-features__description">Our gym is blessed with knowledgable trainers to motivate you to go beyond your limits.</p>
+            </div>
+            <div class="our-features__icon">
+              <div class="our-features__icon-space">
+                <img class="our-features_icon-image" src="icons/flower-spa-icon.svg" alt="">
+              </div>
+              <h3 class="our-features__title">EXCELLENT SPA FACILITIES</h3>
+              <p class="our-features__description">We also contain an in-house spa to help relieve the strain or do something different.</p>
+            </div>
+            <div class="our-features__icon">
+              <div class="our-features__icon-space">
+                <img class="our-features_icon-image" src="icons/slim-waist-icon.svg" alt="">
+              </div>
+              <h3 class="our-features__title">WEIGHT LOSS CHALLENGES</h3>
+              <p class="our-features__description">Our top cardio coaches run a range of super effective weight loss challenge programs to drop
+                weight fast and sustain the fat loss.</p>
+            </div>
+            <div class="our-features__icon">
+              <div class="our-features__icon-space">
+                <img class="our-features_icon-image" src="icons/strength-icon.svg" alt="">
+              </div>
+              <h3 class="our-features__title">GREAT PHYSIO SUPPORT</h3>
+              <p class="our-features__description">Headed by our star head physiotherapist John Moynes, there is excellent physio support available
+                should you need it.</p>
+            </div>
+            <div class="our-features__icon">
+              <div class="our-features__icon-space">
+                <img class="our-features_icon-image" src="icons/award-23.svg" alt="">
+              </div>
+              <h3 class="our-features__title">HIGHLY RATED GYM</h3>
+              <p class="our-features__description">We are a highly rated and prized gym because we believe in achieving high results without
+                high prices. Check our <a href="#testimonials">Testimonials</a> section for further proof.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- About Us section -->
+        <section class="about-us" id="about">
+          <div class="about-us__left-col" style="font-size: 1.6rem;">
+              <h2 class="section-heading">ABOUT US</h2>
+              <div class="about-us__paragraphs">
+                <div class="about-us__paragraph">We are T3 Gym. We are a modern, state-of-the-art yet basic and affordable gym for people of all shapes and sizes.</div>
+                <div class="about-us__paragraph">Conceived initially by 3 friends (Mark, Dan and Luke) who had the idea of a gym with a modern presentation, look and feel. 
+                    However, they didn't believe that access to all this should cost an arm and a leg, and share a strong belief of minimalism as well as making the most 
+                    out of little. Thus, T3 Gym was born.</div>
+                <div class="about-us__paragraph">This unique concept brought forward by T3 Gym has created somewhat of a buzz in the fitness industry and we hope to 
+                    continue increasing our reach as we strive for more recognition and maybe even expansion.
+                </div>
+              </div>
+              <br>
+          </div>
+          <div class="about-us__right-col">
+              <figure class="about-us__profile">
+                  <img class="about-us__profile-image" src="images/mark-hanson.jpg" alt="">
+                  <figcaption class="about-us__caption">Mark Hanson</figcaption>
+                  <figcaption class="about-us__caption"><b>CEO/Head Trainer</b></figcaption>
+              </figure>
+              <figure class="about-us__profile">
+                  <img class="about-us__profile-image" src="images/dan-lynch.jpg" alt="">
+                  <figcaption class="about-us__caption">Dan Lynch</figcaption>
+                  <figcaption class="about-us__caption"><b>CTO/Cardio Coach</b></figcaption>
+              </figure>
+              <figure class="about-us__profile">
+                  <img class="about-us__profile-image" src="images/luke-james.jpg" alt="">
+                  <figcaption class="about-us__caption">Luke James</figcaption>
+                  <figcaption class="about-us__caption"><b>COO</b></figcaption>
+              </figure>
+              <figure class="about-us__profile">
+                  <img class="about-us__profile-image" src="images/john-moynes.jpg" alt="">
+                  <figcaption class="about-us__caption">John Moynes</figcaption>
+                  <figcaption class="about-us__caption"><b>Head Physio</b></figcaption>
+              </figure>
+          </div>
+        </section>
+
+
+
+        <!-- Pricing Plans section -->
+        <section class="pricing-plans">
+          <h1 class="section-heading" id="pricing">OUR PRICING PLANS</h1>
+          <div class="pricing-plans__container">
+              <div class="pricing-plans__plan">
+                  <h2 class="pricing-plans__tier">BASIC</h2>
+                  <h2 class="pricing-plans__price">$15</h2>
+                  <p class="pricing-plans__charge-frequency">Billed monthly</p>
+                  <ul class="pricing-plans__feature-list">
+                      <li class="pricing-plans__feature-item">Limited but generous use of facilities</li>
+                      <li class="pricing-plans__feature-item">Access to a range of fitness classes</li>
+                      <li class="pricing-plans__feature-item">Up to 1 hour at a time</li>
+                  </ul>
+                  <button class="pricing-plans__join-button"><a class="pricing-plans__join-link" href="#sign-up">JOIN NOW</a></button>
+              </div>
+              <div class="pricing-plans__plan">
+                  <h2 class="pricing-plans__tier">REGULAR</h2>
+                  <h2 class="pricing-plans__price">$25</h2>
+                  <p class="pricing-plans__charge-frequency">Billed monthly</p>
+                  <ul class="pricing-plans__feature-list">
+                      <li class="pricing-plans__feature-item">Complete use of all facilities</li>
+                      <li class="pricing-plans__feature-item">Assigned personal trainer (optional)</li>
+                      <li class="pricing-plans__feature-item">Up to 3 hours at a time</li>
+                  </ul>
+                  <button class="pricing-plans__join-button"><a class="pricing-plans__join-link" href="#sign-up">JOIN NOW</a></button>
+              </div>
+              <div class="pricing-plans__plan">
+                  <h2 class="pricing-plans__tier">ADVANCED</h2>
+                  <h2 class="pricing-plans__price">$40</h2>
+                  <p class="pricing-plans__charge-frequency">Billed monthly</p>
+                  <ul class="pricing-plans__feature-list">
+                      <li class="pricing-plans__feature-item">Unlimited use of gym facilities</li>
+                      <li class="pricing-plans__feature-item">Personal trainer + physio (optional)</li>
+                      <li class="pricing-plans__feature-item">Inclusive use of spa</li>
+                  </ul>
+                  <button class="pricing-plans__join-button"><a class="pricing-plans__join-link" href="#sign-up">JOIN NOW</a></button>
+              </div>
+          </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section-testimonials grid grid--3-cols" id="testimonials">
+        <!-- <div class="container center-text"> -->
+
+        <div class="testimonials-container">
+        <!-- <span class="sub-heading">Testimonials</span> -->
+        <h1 class="section-heading" id="test">TESTIMONIALS</h1>
+        <h2 class="heading-secondary">NO PAIN, NO GAIN!</h2>
+        <!-- </div> -->
+
+        <!-- <div class="testimonials">testimonials</div> -->
+        <section class="testimonial-content">
+          <figure>
+            <img
+              class="testimonial-img"
+              alt="photo of gym customer sheilla willson"
+              src="img 1.jpg"
+            />
+            <blockquote class="testimonial-text">
+              "Aside from having world's best gear, excellent instructors and
+              coaches, World Gym has a unique and thrilling atmosphere.
+              Instructors are attentive, and they all try to fulfill athletes;
+              unique needs, achieving better and faster results."
+            </blockquote>
+            <p class="testimonial-name">&mdash; Sheilla willson</p>
+          </figure>
+
+          <figure>
+            <img
+              class="testimonial-img"
+              alt="photo of gym customer david brice"
+              src="test img2.jpg"
+            />
+            <blockquote class="testimonial-text">
+              "I workout at World Gym because of the atmosphere. I am surrounded
+              by people who PUSH me to be more every day. I am encouraged and
+              believed in. It feels like a second home and I am so lucky to have
+              found this wonderful oasis of positivity!"
+            </blockquote>
+            <p class="testimonial-name">&mdash; david brice</p>
+          </figure>
+
+          
+            <figure>
+              <img
+                class="testimonial-img"
+                alt="photo of gym customer john roland"
+                src="test img3.jpg"
+              />
+              <blockquote class="testimonial-text">
+                "We all have to start somewhere. It takes patience, time and
+                consistency. To get where we want to go, we have to make the
+                decision to start,Don't give up!.Training outcomes do not come
+                overnight.It is a process that takes time and patience."
+              </blockquote>
+              <p class="testimonial-name">&mdash; john roland</p>
+            </figure>
+
+            <figure>
+              <img
+                class="testimonial-img"
+                alt="photo of gym customer john roland"
+                src="test img4.jpg"
+              />
+              <blockquote class="testimonial-text">
+                "When I weighed 370 lbs I felt so discouraged. Thank God for the Total Gym, after using that, in the first month that I had it, I started seeing results. The results have been amazing. T3 Gym has changed my life. in the gym it's either 
+                you go hard or you go home!"
+              </blockquote>
+              <p class="testimonial-name">&mdash; frank walter</p>
+            </figure>
+        </div>
+        </div>
+        </section>
+
+        <!-- Location & Sign-up -->
+        <div class="location-signup-container" id="location">
+        <h1 class="section-heading">LOCATION</h1>
+        <h2>FIND US HERE...</h2>
+
+        <div class="location-container">
+
+        <div class="branch">
+        <div class="main-branch">
+            <h2>Our Main Branch</h2>
+            <h3>Toucans03 GYM</h3>
+            <p>Red Street, Block 72</p>
+
+            <p class="open">Open Hours:</p>
+            
+            <p class="time">Everyday 5:30am to 11:00pm </p>
+        </div>  
+
+        <div class="other-branch">
+            <h2 class="other-branches">Other branches</h2>
+            <h3>Adenta SSNIT GYM</h3>
+            <p>Block 72</p>
+        </div>
+        </div>    
+
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.030235897618!2d-0.16071038519711367!3d5.708770795862356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9de355fc7e43%3A0xf082e99241bcbad5!2sAdenta%20SSNIT%20Flats%20Block%2072!5e0!3m2!1sen!2sgh!4v1661348126792!5m2!1sen!2sgh" width="300" height="160" style="border: 1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>   
+        </div>
+
+        <!-- Sign up section -->
+        <div class="sign-up-container" style="font-size: 1.6rem;" id="sign-up">
+        <h2 id="signup-header">Join Us For More Information</h2>
+        <div class="sign-up-section" id="Sign up">
+
+        <h2>Sign Up</h2>
+        <h3>Already a member? <a href="#" class="sign-log">Log In here</a></h3>
+
+        <form class="sign-up-form" >
+            <div class="input-group">
+                <label for="user-name">User name</label>
+                  <input type="text"  name="user-name" id="user-name" class="form-user form-input" placeholder="kobby123" required> 
+                <label for="email">Email</label>
+                  <input type="email"  name="email" id="email" class="form-email form-input" placeholder="kobby@gymmail.com" required> 
+
+                <label for="pass">Password</label>
+                <input type="password" class="form-password form-input" name="pass" id="pass" required>
+            
+                <button type="submit" class="form-btn" style="font-size: 1.6rem;">Sign Up</button>
+            </div>
+        </form>
+
+        </div>
+        </div>
+        </div>
+    </main>
+
+      
+
+
+    <footer>
+        <div class="footer-main" style="font-size: 1.6rem;">
+        <div class="footer-logo">
+            <h2>Toucans03 Gym</h2>
+        </div>
+        
+
+        <div class="contact">
+            <h4>Contact Us</h4>
+            <p>somegym@gymail.com</p>
+            <p>Weekdays 9:30am to 9:00pm</p>
+            <p>001-025-1585</p> 
+        </div>
+
+        <div class="social" style="font-size: 1.6rem;">
+            <h4>Social Media</h4>
+            <div class="brands">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+            
+        </div>
+
+        <div class="terms">
+            <h4>Legal</h4>
+            <p>Terms of use</p>
+            <p>Privacy Policy</p>
+            
+        </div>
+    </div>
+        <p id="copyright" style="font-size: 1.6rem;"><i class="fa-regular fa-copyright"></i> Toucans Inc. 2022</p>
+    </footer>
+    
+</body>
+</html>
